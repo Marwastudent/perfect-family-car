@@ -1,0 +1,124 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+nav {
+    width: 100%;
+    margin-top: -40px ;
+    background-color: #194325;
+    height: 100px;
+    display: flex;
+    position: sticky;
+    z-index: 1000;
+}
+.dlogo {
+    width: 215px;
+}
+.logo {
+    width: 180px;
+    height: 125px;
+    margin-top: -10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+   
+}
+
+.center {
+    width: 800px;
+    background-color:#194325;
+    margin: 0px auto;
+    position: sticky;
+    top: 10px;
+}
+nav ul {
+    list-style-type: none;
+}
+nav ul li {
+    float: left;
+    width: 25%;
+    text-align: center;
+    position: relative;
+
+}
+nav ul::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+nav .center a {
+    display: block;
+    text-decoration: none;
+    color: antiquewhite;
+    font-family:monospace;
+    margin-top: 10px
+}
+.sous {
+    display: none;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+    background-color: #102917;
+    border-radius: 10px;
+    margin: 0px;
+}
+.sous li {
+    float: none;
+    width: 100%;
+    text-align: left;
+    padding: 0px;
+}
+.sous a {
+    padding: 10px;
+}
+nav ul li a {
+    font-size: 1.5em;
+    padding: 30px 0px;
+    font-weight: bold;
+}
+.dero:hover .sous {
+    display: block;
+}
+nav p {
+    font-size: 12px;
+}
+.dero>a::after {
+    content: " ▼";
+    font-size: 15px;
+}
+body{
+    background:linear-gradient(200deg,#e0e4da,#02300f);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+    height:700px;
+    text-align: left;
+    padding-top: 40px;
+}
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+.card {
+    border-radius: 20px;
+}
+
+.card-header {
+    background-color:#194325;
+    color: white;
+    border: solid #194325;
+    border-radius: 20px;
+
+
+}
+
+.card-footer a {
+    color: #194325;
+    text-decoration: none;
+}
+
+.card-footer a:hover {
+    text-decoration: underline;
+}

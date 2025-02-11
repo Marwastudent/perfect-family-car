@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réservation</title>
+    <link rel="stylesheet" href="réservation.css">
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap-grid.min.css">
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="dlogo">
+            <a href="loaction-acc.html"><img class="logo" src="logo-removebg-preview (1).png"></a>
+        </div>
+        <div class="center">
+            <ul class="menu"  class="navbar-nav ms-auto">
+                <li><a href="loaction-acc.html">Accueil</a></li>
+                <li class="dero"><a href="Réservation.html">Services</a>
+                    <ul class="sous">
+                        <li><a href="Réservation.html">Réserver</a></li>
+                    </ul>
+                </li>
+                <li><a href="vehicules.html">Véhicules</a>
+                </li>
+                <li class="dero"><a href="">Contact</a>
+                    <ul class="sous">
+                        <li><a href="">Télephone</a></li>
+                        <li><a href="">Email</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="icon">
+            <a href="search.html"><i class="fa-solid fa-magnifying-glass fa-xl"></i> </a>
+        </div>
+    </nav>
+    <div class="body">
+        <div class="form-container">
+                <h2>Réservation de Voiture</h2>
+                <label for="car-model">Modèle de voiture :</label>
+                <select id="car-model" name="car_model" required>
+                    <option value="">-- Sélectionnez une voiture --</option>
+                    <option value="sedan">Range Rover</option>
+                    <option value="suv">Porche </option>
+                    <option value="compact">Sandero</option>
+                    <option value="luxury">Opel Corsa</option>
+                </select>
+                <label for="start-date">Date de début :</label>
+                <input type="date" id="start-date" name="start_date" required>
+                <label for="end-date">Date de fin :</label>
+                <input type="date" id="end-date" name="end_date" required>
+                <label for="full-name">Nom complet :</label>
+                <input type="text" id="full-name" name="full_name" placeholder="Entrez votre nom" required>
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" placeholder="Entrez votre email" required>
+
+                <label for="phone">Téléphone :</label>
+                <input type="tel" id="phone" name="phone" placeholder="Entrez votre numéro de téléphone" required>
+
+
+                <button type="submit" class="réserver">Réserver</button>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 Perfect family car. Tous droits réservés.</p>
+    </footer>
+</body>
+
+</html>
